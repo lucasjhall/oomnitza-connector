@@ -148,6 +148,8 @@ class Connector(AssetsConnector):
     def prepare_device(self, device):
         call_for_custom_attributes = self.settings['custom_attributes'] in TrueValues
         device_info = device['attributes']
+        device_info['id'] = device['id']
+        device_info['group_id'] = device['relationships']['device_group']['data']['id']
         if call_for_custom_attributes:
             device_info['custom_attributes'] = self.get_device_custom_attributes(device)
 
