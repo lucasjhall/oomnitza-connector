@@ -1,11 +1,12 @@
 # Changelog
 
-## [2.1.1]
+## [2.1.2]
 
 ### Changed
 
-- Updated the README for the Chromebook connector
-- Updated the requirements.txt
+- Updated SimpleMDM Connector to support
+  - Device ID
+  - Group ID
 
 ## [2.1.1]
 
